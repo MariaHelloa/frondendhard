@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funções do navegador</title>
+</head>
+<body>
+    <script>
+        var teste='Programador carioca';
+        alert(teste);
+        var nome = "André";
+        var saudacoes = "Seja bem-vindo ";
+        document.write(saudacoes += nome+"</br>");
+        document.write("teste".charAt(3)+"</br>");
+        var palavra="Teste";
+        document.write(palavra[2]+"</br>");
+        var palavra3="Teste";
+        document.write(palavra3.indexOf("t")+"</br>");
+        var palavra4="teste";
+        document.write(palavra4.toUpperCase()+"</br>");
+        var palavra5="teste";
+        document.write(palavra5.toLowerCase()+"</br>");
+        var frase= "Mergulhando em tecnologia.";  
+        document.write(frase.substr(0,11)+"</br>");
+        var frase2= "Mergulhando em tecnologia.";
+        document.write(frase2.slice(0,11)+"</br>");
+        var nome2 = "André";
+var comunicacao = " Olá, sr. nomeusurario, ";
+document.write(comunicacao.replace("nomeusurario",nome2)+"</br>");
+var novaString = "Programe nas linguagens. ";
+
+document.write(novaString.concat("JavaScript,").concat(" Python,").concat(" e C#.")+"<br>");
+
+var linguagens = "JavaScript;Java;C#;C;C++";
+var arrayLinguagens = linguagens.split(";");
+document.write(arrayLinguagens+"<br>");
+
+var login = "   andre@emailteste.com      ";
+var loginSemEspaco = login.trim();
+document.write(loginSemEspaco+"<br>");
+
+var manoelFeira = "Manoel foi à feira";
+document.write(manoelFeira.charCodeAt(0)+"<br>");
+document.write(manoelFeira.charCodeAt(3)+"<br>"); 
+    </script>
+</body>
+</html>
