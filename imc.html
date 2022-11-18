@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IMC</title>
+</head>
+<body>
+   <script>
+   var peso = prompt("Peso:");
+   var altura = prompt("Altura:");
+   imc();
+   function imc(){
+       imc2= peso/(altura*altura);
+       if (imc2<17){
+           document.write("Muito abaixo do peso");
+       }else if((imc2>=17) && (imc2<=18.49)){
+        document.write("abaixo do peso");
+       } else if((imc2>=18.5) && (imc2<=24.99)){
+        document.write("normal");
+       }  else if((imc2>=25) && (imc2<=29.99)){
+        document.write("acima do peso");
+       } else if((imc2>=30) && (imc2<=34.99)){
+        document.write("Obesidade 1");
+       }  else if((imc2>=35) && (imc2<=99.99)){
+        document.write("Obesidade morbida");
+       } else if(imc2>=40) {
+        document.write("Para de comer por favor");
+       }
+   }
+   </script> 
+</body>
+</html>
